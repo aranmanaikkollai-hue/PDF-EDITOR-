@@ -1,0 +1,5 @@
+{
+  "name": "ProPDF Editor",
+  "description": "Premium PDF workspace with AI-powered summaries and advanced editing tools.",
+  "requestFramePermissions": ["camera"]
+}
