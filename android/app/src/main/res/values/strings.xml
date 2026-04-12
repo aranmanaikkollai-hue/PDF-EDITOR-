@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ProPDF</string>
+    <string name="title_activity_main">ProPDF</string>
+    <string name="package_name">com.propdf.editor</string>
+    <string name="custom_url_scheme">com.propdf.editor</string>
+</resources>
