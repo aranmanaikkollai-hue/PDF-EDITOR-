@@ -13,7 +13,7 @@ workflows:
       events:
         - push
       branch_patterns:
-        - main
+        - pattern: main
     scripts:
       - name: Install dependencies
         script: |
