@@ -13,7 +13,7 @@ workflows:
       events:
         - push
       branch_patterns:
-        - name: main
+        - main
     scripts:
       - name: Install dependencies
         script: |
@@ -26,13 +26,15 @@ workflows:
           npx cap sync android
       - name: Build Android APK
         script: |
-          cd android && ./gradlew assembleDebug
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug
     artifacts:
       - android/app/build/outputs/apk/**/*.apk
     publishing:
       email:
         recipients:
-          - aranmanaikkollai@gmail.com # Your email from context
+          - aranmanaikkollai@gmail.com
         notify:
           success: true
           failure: true
