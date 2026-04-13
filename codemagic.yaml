@@ -6,7 +6,7 @@ workflows:
     instance_type: mac_mini_m1
     environment:
       node: latest
-      java: 17
+      java: 21 # Updated from 17 to 21 to match Android SDK requirements
       groups:
         - google_play # Optional: for automated deployment
     triggering:
